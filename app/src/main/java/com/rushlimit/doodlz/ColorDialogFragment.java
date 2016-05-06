@@ -70,6 +70,7 @@ public class ColorDialogFragment extends DialogFragment {
         redSeekBar.setProgress(Color.red(color));
         greenSeekBar.setProgress(Color.green(color));
         blueSeekBar.setProgress(Color.blue(color));
+        colorView.setBackgroundColor(color);
 
         // Add Set Color Button
         builder.setPositiveButton(R.string.button_set_color, new DialogInterface.OnClickListener() {
